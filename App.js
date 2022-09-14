@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import HomePage from './src/screens/HomePage'
 import Words from './src/screens/Words'
+import Description from "./src/screens/Description";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,11 @@ function App() {
         <Stack.Screen
           name="Words"
           component={Words}
+          options={{ title: "Diccionario Teologico" }}
+        />
+        <Stack.Screen
+          name="Description"
+          component={Description}
           options={{ title: "Diccionario Teologico" }}
         />
       </Stack.Navigator>

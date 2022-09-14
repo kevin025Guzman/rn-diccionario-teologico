@@ -3,17 +3,23 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import React from "react";
 
 const ListItem = ({ item, navigation }) => {
-  const { char, words } = item;
+  const { words } = item;
 
-  const goWords = () => navigation.navigate("Words");
+  const goDescription = () => navigation.navigate("Description");
 
   return (
     <SafeAreaView style={styles.container}>
-   
-            <TouchableOpacity style={styles.button} onPress={goWords}>
-              <Text>{words[0].name}</Text>
+      <FlatList
+        data={words}
+        keyExtractor={(item) => item.name}
+        renderItem={({ item }) => (
+          <View>
+            <TouchableOpacity style={styles.button} onPress={goDescription}>
+              <Text>{item.name}</Text>
             </TouchableOpacity>
-    
+          </View>
+        )}
+      ></FlatList>
     </SafeAreaView>
   );
 };

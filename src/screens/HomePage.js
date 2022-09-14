@@ -6,7 +6,6 @@ import ListItem from '../components/ListItem'
 
 const HomePage = ({navigation}) => {
 
-
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
