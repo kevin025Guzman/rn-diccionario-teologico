@@ -9,6 +9,10 @@ export const data=[
         {
             name: 'Adan',
             description:"Dios creo a Adan"
+        },
+        {
+            name: 'Arbol',
+            description:"Planta creada por Dios"
         }
         ]
     },
@@ -34,8 +38,25 @@ export const data=[
         },
         {
             name: 'Canon',
-            description:"Los libros de la biblia"
+            description:`Los
+             libros de la biblia`
         }
         ]
     }
+    ,
+    {
+        id:4,
+        char:'D',
+        words:[{
+            name: 'Decalogo',
+            description:` Los Diez Mandamientos (del griego deka, diez, y logos, palabra). El modo en que se les numera difiere. Tanto la tradición judía como la mayoría de los protestantes cuentan el mandamiento contra tener otros dioses y el mandamiento contra los ídolos o imágenes como dos, mientras el catolicismo romano y la mayoría de los luteranos los cuentan como uno. En este último caso los mandamientos resultan ser diez dividiendo la lista de prohibiciones contra la codicia en dos. En muchas iglesias el decálogo se lee frecuentemente en el culto como resumen de la Ley. Su lugar en el orden de adoración, unas veces antes de la confesión de pecados, y otras como respuesta al Evangelio, refleja diferentes énfasis sobre la función de la Ley—en el primer caso, la función principal de la Ley es convencer al creyente de su pecado, y en el otro, esa función es servir de guía a los creyentes (^Ley, tercer uso de la).`
+        },
+        {
+            name: 'Decretos Eternos',
+            description:`Los decretos—que según algunos son en realidad uno solo—mediante los cuales Dios ha determinado eternamente el resultado de la creación, y en particular la salvación de unos y la condenación de otros. Aunque esta cuestión se discutió anteriormente por los escolásticos (^Escolasticismo), fue tema característico de la tradición ^reformada, y particularmente del --calvinismo ortodoxo, donde se ha discutido mucho acerca del orden de los decretos divinos (-•Infralapsarianismo; ->Supralapsarian¡smo; -Predestinación). Más recientemente algunos teólogos reformados, siguiendo en ello a Karl
+            Barth (1886-1968), afirman que el decreto eterno de Dios es aquel mediante el cual ha decidido que la salvación será ofrecida gratuitamente por medio de Jesucristo. `
+        }
+        ]
+    }
+    
 ]

@@ -2,33 +2,42 @@ import { StyleSheet, Text, View, TouchableOpacity ,FlatList} from "react-native"
 import { SafeAreaView } from 'react-native-safe-area-context'
 import React from "react";
 
-const ListItem = ({ item, navigation }) => {
-  const { words } = item;
+const ListItemWords = ({ item, navigation }) => {
+  
+  const {name, description} = item
 
-  const goDescription = () => navigation.navigate("Description");
+  const goDescription = () => navigation.navigate("Description", {
+    descript: description,
+    name: name
+  });
 
   return (
     <SafeAreaView style={styles.container}>
-      <FlatList
-        data={words}
-        keyExtractor={(item) => item.name}
-        renderItem={({ item }) => (
-          <View>
+      
+          <View >
             <TouchableOpacity style={styles.button} onPress={goDescription}>
-              <Text>{item.name}</Text>
+              <Text style={styles.text}>{name}</Text>
             </TouchableOpacity>
           </View>
-        )}
-      ></FlatList>
+      
+    
     </SafeAreaView>
   );
 };
 
-export default ListItem;
+export default ListItemWords;
 
 const styles = StyleSheet.create({
+
   button: {
-    backgroundColor: "#efefef",
+    backgroundColor: "#303030",
     padding: 30,
+    marginBottom: 5,
+    
+    borderRadius: 10
   },
+  text:{
+    color:"#fff",
+    textAlign: "center"
+  }
 });

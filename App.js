@@ -1,10 +1,8 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import HomePage from './src/screens/HomePage'
-import Words from './src/screens/Words'
+import HomePage from "./src/screens/HomePage";
+import Words from "./src/screens/Words";
 import Description from "./src/screens/Description";
 
 const Stack = createNativeStackNavigator();
@@ -16,17 +14,39 @@ function App() {
         <Stack.Screen
           name="HomePage"
           component={HomePage}
-          options={{ title: "Diccionario Teologico" }}
+          options={{
+            title: "Diccionario Teologico",
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: '#101010',
+            },
+            headerTintColor: '#fff',
+          }}
         />
         <Stack.Screen
           name="Words"
           component={Words}
-          options={{ title: "Diccionario Teologico" }}
+          options={{
+            title: "Diccionario Teologico",
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: '#101010',
+            },
+            headerTintColor: '#fff',
+           
+          }}
         />
         <Stack.Screen
           name="Description"
           component={Description}
-          options={{ title: "Diccionario Teologico" }}
+          options={{
+            title: "Descripcion",
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: '#101010',
+            },
+            headerTintColor: '#fff',
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
