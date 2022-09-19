@@ -18,6 +18,7 @@ const HomePage = ({ navigation }) => {
         numColumns={2}
         columnWrapperStyle={styles.row} 
         keyExtractor={(item) => item.id}
+        showsHorizontalScrollIndicator={false}
         renderItem={({ item }) => (
           <ListItem item={item} navigation={navigation} />
         )}

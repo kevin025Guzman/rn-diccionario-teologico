@@ -11,7 +11,7 @@ const Description = ( {route, navigation}) => {
   
   return (
     <ImageBackground source={ image } resizeMode="cover"  style={{width: '100%', height: '100%'}}>
-    <ScrollView style={styles.container}>
+    <ScrollView  showsVerticalScrollIndicator={false} style={styles.container}>
    
       <Text style={styles.text}>{descript}</Text>
     </ScrollView>
@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
     flex:1,
     paddingHorizontal: 15,
     paddingVertical: 15,
-    color: "#000"
+    color: "#000",
+
   },
   text:{
    

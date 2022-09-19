@@ -54,6 +54,7 @@ const Words = ({ route, navigation }) => {
       <FlatList
         data={wordsFiltered}
         keyExtractor={(item) => item.name}
+        showsHorizontalScrollIndicator={false}
         renderItem={({ item }) => (
           <ListItemWords item={item} navigation={navigation} />
         )}
