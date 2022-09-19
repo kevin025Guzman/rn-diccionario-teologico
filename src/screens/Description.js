@@ -3,7 +3,7 @@ import React from 'react'
 
 const Description = ( {route, navigation}) => {
 
-  const image =require("../../assets/background.jpg");
+  const image =require("../../assets/background05.jpg");
 
   const {descript, name} = route.params
 
@@ -24,16 +24,17 @@ export default Description
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    
     paddingHorizontal: 15,
-    paddingVertical: 15
-
+    paddingVertical: 15,
+    color: "#000"
   },
   text:{
-    color:"#202020",
-    fontSize: 19,
+   
+    fontSize: 20,
     padding:10,
     lineHeight: 30,
+    fontFamily: "lucida grande",
+    color:"#000",
   }
 })
 

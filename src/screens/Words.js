@@ -46,7 +46,7 @@ const Words = ({ route, navigation }) => {
     ),
   });
 
-  const image =require("../../assets/background.jpg");
+  const image =require("../../assets/background05.jpg");
 
   return (
     <ImageBackground source={ image } resizeMode="cover"  style={{width: '100%', height: '100%'}}>
@@ -68,7 +68,7 @@ export default Words;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: -10,
+    paddingTop: 10,
     paddingHorizontal: 10,
   },
   Searchbar: {

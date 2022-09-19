@@ -7,7 +7,7 @@ import Description from "./src/screens/Description";
 
 const Stack = createNativeStackNavigator();
 
-const image = { uri: "https://i.pinimg.com/originals/85/f8/c4/85f8c4241e502636dd2bcf0f3c6e886e.jpg"};
+
 
 function App() {
   return (

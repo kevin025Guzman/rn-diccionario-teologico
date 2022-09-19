@@ -7,7 +7,7 @@ import ListItem from "../components/ListItem";
 
 const HomePage = ({ navigation }) => {
 
-  const image = { uri: "https://i.pinimg.com/originals/85/f8/c4/85f8c4241e502636dd2bcf0f3c6e886e.jpg"};
+  const image =require("../../assets/background05.jpg");
 
   return (
     <ImageBackground source={image} resizeMode="cover"  style={{width: '100%', height: '100%'}}>
