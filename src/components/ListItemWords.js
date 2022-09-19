@@ -30,10 +30,9 @@ export default ListItemWords;
 const styles = StyleSheet.create({
 
   button: {
-    backgroundColor: "#303030",
+    backgroundColor: "#101010",
     padding: 30,
-    marginBottom: 5,
-    
+    marginBottom: 0,
     borderRadius: 10
   },
   text:{

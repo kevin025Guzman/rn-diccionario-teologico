@@ -3,8 +3,9 @@ export const data=[
         id:1,
         char:'A',
         words:[{
-            name: 'Abraham',
-            description:"Dios llamo a Abraham para formar un pueblo."
+            name: 'Absolución',
+            description:`La acción de absolver o dejar libre. En contextos teológicos se refiere al perdón del pecador. Desde fecha muy temprana, se acostumbraba que la iglesia orase por la absolución de los pecadores que confesaban sus pecados que Dios les perdonase, les dejase libres. En los siglos octavo y noveno se hizo costumbre, en lugar de orar por la absolución del pecador, que el sacerdote le declarase libre. Así vino a ser parte del sacramento de la •penitencia, cuando el sacerdote declara: "Te absuelvo de tus pecados en el nombre del Padre, del Hijo y del Espíritu Santo.` 
+            
         },
         {
             name: 'Adan',

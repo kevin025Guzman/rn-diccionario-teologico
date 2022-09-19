@@ -25,13 +25,15 @@ export default ListItem;
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "#303030",
-    padding: 75,
-    marginBottom: 5,
+    backgroundColor: "#101010",
+    padding: 60,
+    marginVertical: 5,
     borderRadius: 10
   },
   text:{
     color:"#fff",
-    textAlign: "center"
+    textAlign: "center",
+    fontSize: 55,
+    fontWeight: "bold"
   }
 });
