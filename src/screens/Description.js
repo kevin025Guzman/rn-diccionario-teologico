@@ -50,8 +50,8 @@ const styles = StyleSheet.create({
     color: "#000",
   },
   text: {
-    fontSize: 20,
-    padding: 10,
+    fontSize: 21,
+    padding: 5,
     lineHeight: 30,
     fontFamily: "lucida grande",
     color: "#000",
