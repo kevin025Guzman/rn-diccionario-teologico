@@ -46,7 +46,7 @@ const Words = ({ route, navigation }) => {
     ),
   });
 
-  const image =require("../../assets/background05.jpg");
+  const image =require("../../assets/background1.jpg");
 
   return (
     <ImageBackground source={ image } resizeMode="cover"  style={{width: '100%', height: '100%'}}>

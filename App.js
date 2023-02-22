@@ -7,9 +7,8 @@ import Description from "./src/screens/Description";
 
 const Stack = createNativeStackNavigator();
 
-
-
-function App() {
+export default function App() {
+ 
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="HomePage">
@@ -54,4 +53,4 @@ function App() {
     </NavigationContainer>
   );
 }
-export default App;
+

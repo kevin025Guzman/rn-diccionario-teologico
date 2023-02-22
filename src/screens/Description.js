@@ -7,11 +7,16 @@ import {
 } from "react-native";
 import React from "react";
 import { IconButton } from "react-native-paper";
+import { useFonts } from 'expo-font';
 
 const Description = ({ route, navigation }) => {
-  const image = require("../../assets/background05.jpg");
+  const image = require("../../assets/background1.jpg");
 
   const { descript, name } = route.params;
+
+  const [fontsLoaded] = useFonts({
+    'Monserrat-Medium': require("../../assets/font/Montserrat-Medium.ttf"),
+  });
 
   navigation.setOptions({
     title: name,
@@ -50,10 +55,10 @@ const styles = StyleSheet.create({
     color: "#000",
   },
   text: {
-    fontSize: 21,
-    padding: 5,
+    fontSize: 19,
+    padding:  5,
     lineHeight: 30,
-    fontFamily: "lucida grande",
+    fontFamily: "Monserrat-Medium",
     color: "#000",
   },
 });
