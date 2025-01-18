@@ -35,7 +35,7 @@ const Words = ({ route, navigation }) => {
     title: "Letra " + char,
     headerTitle: () => (
       <Searchbar
-        placeholder="Search"
+        placeholder="Buscar palabra"
         placeholderTextColor="#fff"
         onChangeText={onChangeSearch}
         value={searchQuery}
@@ -69,7 +69,7 @@ export default Words;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 10,
+    
     paddingHorizontal: 10,
   },
   Searchbar: {

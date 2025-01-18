@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     color: "#000",
   },
   text: {
-    fontSize: 19,
+    fontSize: 14,
     padding:  5,
     lineHeight: 30,
     fontFamily: "Monserrat-Medium",
