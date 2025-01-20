@@ -1,6 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+
 import HomePage from "./src/screens/HomePage";
 import Words from "./src/screens/Words";
 import Description from "./src/screens/Description";
@@ -8,6 +9,8 @@ import Description from "./src/screens/Description";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+
+  
  
   return (
     <NavigationContainer>
